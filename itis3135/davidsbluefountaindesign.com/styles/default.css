@@ -1,0 +1,66 @@
+.topnav {
+	overflow: hidden;
+	background-color: #242331;
+}
+
+body {
+	background-color: #242331;
+	font-family: 'Krona One', sans-serif;
+	font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+	background-color: #242331;
+	color: #E6E6E9;
+	font-family: "Krona One";
+}
+h3{
+	color: #E6E6E9;
+
+}
+ul{
+	color: #E6E6E9;
+}
+p {
+	color: #E6E6E9;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 25%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.column {
+	float: right;
+	width: 33.33%;
+	padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+footer {
+	background-color: #E6E6E9;
+	text-align: center;
+	padding: 10px;
+}
+
+table tr:nth-child(even) {
+	background-color: #777;
+	color: #fff;
+}
+
+input[type=text] {
+	border: 2px solid #E6E6E9;
+	border-radius: 4px;
+}
