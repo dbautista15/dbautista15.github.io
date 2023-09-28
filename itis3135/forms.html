@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>David Bautista's Dynamic Bull Forms Page</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Krona+One&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Silkscreen&display=swap"
+		rel="stylesheet">
+	<style>
+		body {
+			background-color: #E6E6E9;
+			font-family: "Roboto Mono";
+		}
+
+		h1 {
+			color: #0A0908;
+			font-family: "Krona One";
+		}
+
+		p {
+			color: #0A0908;
+		}
+
+		.topnav {
+			overflow: hidden;
+			background-color: #E6E6E9;
+		}
+
+		footer {
+			background-color: #577590;
+			text-align: center;
+			padding: 10px;
+		}
+
+		input[type=text] {
+			background-color: #E6E6E9;
+			border: 2px solid black;
+			border-radius: 4px;
+		}
+
+		input[type=button],
+		input[type=submit],
+		input[type=reset] {
+			background-color: #577590;
+			border: none;
+			color: white;
+			padding: 8px 12px;
+			text-decoration: none;
+			margin: 2px 2px;
+			cursor: pointer;
+		}
+
+		select {
+			width: 50%;
+			padding: 16px 20px;
+			border: none;
+			border-radius: 4px;
+			background-color: #f1f1f1;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div data-include="components/header.html"></div>
+		<script src="../itis3135/scripts/dynamicLoader.js"></script>
+	</header>
+
+	<main>
+		<h1 style="text-align:center;">Forms</h1>
+	</main>
+	<form id="form" action="#">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" placeholder="your name" size="50" required><br>
+		<br>
+		<label for="pnumber">Phone Number:</label>
+		<input type="text" id="pnumber" name="pnumber" placeholder="123-45-678" size="50" required><br>
+		<br>
+		<label for="email">Email:</label>
+		<input type="text" id="email" name="email" placeholder="yourname@email.com" size="50" required><br>
+		<br>
+		<label for="mood">Mood:</label>
+		<input type="text" id="mood" name="mood" placeholder="mood" size="50" required><br>
+		<br>
+		<label for="sched">Availability:</label><br>
+		<input type="checkbox" id="mon" name="sched">Monday<br>
+		<input type="checkbox" id="tues" name="sched">Tuesday<br>
+		<input type="checkbox" id="wed" name="sched">Wednesday<br>
+		<input type="checkbox" id="thurs" name="sched">Thursday<br>
+		<input type="checkbox" id="fri" name="sched">Friday<br>
+		<input type="checkbox" id="sat" name="sched">Saturday<br>
+		<br>
+		<label for="comm">Preferred Method of Communication:</label><br>
+		<input type="radio" id="text" name="comm">Text SMS<br>
+		<input type="radio" id="e-mail" name="comm">Email<br>
+		<input type="radio" id="both" name="comm">Both<br>
+		<br>
+		<label for="OS">Choose Your OS:</label>
+		<select id="OS" name="OS">
+			<option value="MacBook">MacBook</option>
+			<option value="Windows">Windows</option>
+			<option value="Linux">Linux</option>
+		</select>
+		<br>
+
+		<button type="submit">Submit</button>
+	</form>
+	<h3 id="greeting"></h3>
+</body>
+
+<footer>
+	<div data-include="components/footer.html"></div>
+	<script src="../itis3135/scripts/dynamicLoader.js"></script>
+</footer>
+
+</html>

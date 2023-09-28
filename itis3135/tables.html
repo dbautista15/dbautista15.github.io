@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>David Bautista's Dynamic Bull Tables Page</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Krona+One&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Silkscreen&display=swap"
+		rel="stylesheet">
+	<style>
+		body {
+			background-color: #E6E6E9;
+			font-family: "Roboto Mono";
+		}
+
+		h1 {
+			color: #0A0908;
+			font-family: "Krona One";
+		}
+
+		p {
+			color: #0A0908;
+		}
+
+		.topnav {
+			overflow: hidden;
+			background-color: #E6E6E9;
+		}
+
+		table,
+		th,
+		td {
+			border: 1px solid black;
+			border-collapse: separate;
+		}
+
+		footer {
+			background-color: #577590;
+			text-align: center;
+			padding: 10px;
+		}
+
+		table tr:nth-child(even) {
+			background-color: #777;
+			color: #fff;
+		}
+
+		table tr:nth-child(1) {
+			background-color: rgb(58, 58, 58);
+			color: #fff;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div data-include="components/header.html"></div>
+		<script src="../itis3135/scripts/dynamicLoader.js"></script>
+	</header>
+
+	<main>
+		<h1 style="text-align:center;">The Company</h1>
+		<table class="fit-content" style="border:1px solid black;margin-left:auto;margin-right:auto;">
+			<tr>
+				<th id="co1" headers="blank">Name</th>
+				<th id="co2" headers="blank">Email</th>
+				<th id="co3" headers="blank">Salary</th>
+				<th id="co4" headers="blank">Years of Service</th>
+			</tr>
+			<tr>
+				<td headers="co1 c1">David Bautista</td>
+				<td headers="co2 c1">dbautist@BlueFountain.com</td>
+				<td headers="co3 c1">$925,000</td>
+				<td headers="co4 c1">21 Years</td>
+
+			</tr>
+			<tr>
+				<td headers="co1 c2">Goda Lexine</td>
+				<td headers="co2 c2">GLexine@BlueFountain.com</td>
+				<td headers="co3 c2">$325,000</td>
+				<td headers="co4 c2">11 Years</td>
+			</tr>
+			<tr>
+				<td headers="co1 c3">Sibylle Sarita</td>
+				<td headers="co2 c3">SSarita@BlueFountain.com</td>
+				<td headers="co3 c3">$135,000</td>
+				<td headers="co4 c3">4 Years</td>
+			</tr>
+			<tr>
+				<td headers="co1 c4">Terenti Anita</td>
+				<td headers="co2 c4">TAnita@BlueFountain.com</td>
+				<td headers="co3 c4">$135,000</td>
+				<td headers="co4 c4">5 Years</td>
+
+			</tr>
+			<tr>
+				<td headers="co1 c5">Ikram Brandt</td>
+				<td headers="co2 c5">IBrandt@BlueFountain.com</td>
+				<td headers="co3 c5">$115,000</td>
+				<td headers="co4 c5">2 Years</td>
+
+			</tr>
+			<tr>
+				<td headers="co1 c6">Sancha Zviadi</td>
+				<td headers="co2 c6">SZviadi@BlueFountain.com</td>
+				<td headers="co3 c6">$145,000</td>
+				<td headers="co4 c6">4 Years</td>
+
+			</tr>
+			<tr>
+				<td headers="co1 c7">Jessi Æthelric</td>
+				<td headers="co2 c7">JÆthelric@BlueFountain.com</td>
+				<td headers="co3 c7">$125,000</td>
+				<td headers="co4 c7">3 Years</td>
+
+			</tr>
+		</table>
+
+
+		<hr>
+		<h1 style="text-align:center;">Employee Data in Complex Table</h1>
+		<figure>
+			<table class="fit-content" style="border:1px solid black;margin-left:auto;margin-right:auto;">
+				<tr>
+					<th id="col1" headers="blank">Department</th>
+					<th id="col2" headers="blank">Name</th>
+					<th id="col3" headers="blank">Email</th>
+					<th id="col4" headers="blank">Salary</th>
+					<th id="col5" headers="blank">Years of Service</th>
+				</tr>
+				<tr>
+					<td headers="co1 c1">CEO</td>
+					<td headers="co2 c1">David Bautista</td>
+					<td headers="co3 c1">dbautist@BlueFountain.com</td>
+					<td headers="co4 c1">$925,000</td>
+					<td headers="co5 c1">21 Years</td>
+
+				</tr>
+				<tr>
+					<td headers="co1 c2" rowspan="2">IT</td>
+					<td headers="co2 c2">Goda Lexine</td>
+					<td headers="co3 c2">GLexine@BlueFountain.com</td>
+					<td headers="co4 c2">$325,000</td>
+					<td headers="co5 c2">11 Years</td>
+				</tr>
+				<tr>
+
+					<td headers="co1 c3">Sibylle Sarita</td>
+					<td headers="co2 c3">SSarita@BlueFountain.com</td>
+					<td headers="co3 c3">$135,000</td>
+					<td headers="co4 c3">4 Years</td>
+				</tr>
+				<tr>
+					<td headers="co1 c2">Accounting</td>
+					<td headers="co2 c4">Terenti Anita</td>
+					<td headers="co3 c4">TAnita@BlueFountain.com</td>
+					<td headers="co4 c4">$135,000</td>
+					<td headers="co5 c4">5 Years</td>
+
+
+				</tr>
+				<tr>
+					<td headers="co1 c2">Human Resources</td>
+					<td headers="co2 c5">Ikram Brandt</td>
+					<td headers="co3 c5">IBrandt@BlueFountain.com</td>
+					<td headers="co4 c5">$115,000</td>
+					<td headers="co5 c5">2 Years</td>
+
+				</tr>
+				<tr>
+					<td headers="co1 c2">Technician</td>
+					<td headers="co2 c6">Sancha Zviadi</td>
+					<td headers="co3 c6">SZviadi@BlueFountain.com</td>
+					<td headers="co4 c6">$145,000</td>
+					<td headers="co5 c6">4 Years</td>
+
+				</tr>
+				<tr>
+					<td headers="co1 c7">Sales</td>
+					<td headers="co2 c7">Jessi Æthelric</td>
+					<td headers="co3 c7">JÆthelric@BlueFountain.com</td>
+					<td headers="co4 c7">$125,000</td>
+					<td headers="co5 c7">3 Years</td>
+
+				</tr>
+				<tr>
+					<th id="col6" headers="blank" colspan="3">Total Years Of Service:</th>
+					<td colspan="2">50 Years</td>
+				</tr>
+				<tr>
+					<th id="col7" headers="blank" colspan="3">Total Budget:</th>
+					<td colspan="2">$1,905,000</td>
+				</tr>
+			</table>
+			<figcaption class="center">Employee Information On A Complex Table</figcaption>
+		</figure>
+
+	</main>
+
+	<footer>
+		<div data-include="components/footer.html"></div>
+		<script src="../itis3135/scripts/dynamicLoader.js"></script>
+	</footer>
+</body>
+
+</html>
