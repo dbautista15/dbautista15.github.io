@@ -8,28 +8,15 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Krona+One&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Silkscreen&display=swap"
 		rel="stylesheet">
-	<script src="../itis3135/scripts/defaultscripts.js"></script>
-	<link rel="stylesheet" href="../clientProject/styles/default.css">
+		<link rel="stylesheet" href="../clientProject/styles/clientprojectStyles.css">
+
 	<title>ITIS-3135 David Bautista's Dynamic Bull Project 1 Template</title>
 </head>
 
 <body>
-	<div class="topnav">
-		<div style="text-align:center">
-			<a href="../index.html" style="color:#9395D3;"> Home |</a>
-			<a href="../Tables.html" style="color:#9395D3;"> Tables |</a>
-			<a href="../Forms.html" style="color:#9395D3;"> Forms |</a>
-			<a href="../website_evaluations.html" style="color:#9395D3;"> Website Evaluations |</a>
-			<a href="../CRAPPYW3BAG3/THE-CHEESE:).htm" style="color:#9395D3;"> Crappy Webpage |</a>
-			<a href="../hobby/index.html" style="color:#9395D3;"> My Hobbies |</a>
-			<a class="active" href="../clientProject/project1.html" style="color:#9395D3;"> Client Project |</a>
-			<a href="../itis3135/first-scripts.html" style="color:#9395D3;"> First Scripts Page |</a>
-
-
-		</div>
-	</div>
 	<header>
-		<h1>ITIS-3135-091 David Bautista's Dynamic Bull Project 1 Template</h1>
+		<div data-include="../components/header.html"></div>
+		<script src="../clientProject/scripts/dynamicLoader.js"></script>
 	</header>
 	<main>
 		<h2 style="text-align:center;">Project One Name: Evil Belief </h2>
@@ -47,7 +34,8 @@
 		</ul>
 		<hr>
 		<h3>Site Map: </h3>
-		<figure><img src="../clientProject/images/ClientProjectOneDesignPage.drawio.png" width="100%" alt="Site Map"></figure>
+		<figure><img src="../clientProject/images/ClientProjectOneDesignPage.drawio.png" width="100%" alt="Site Map">
+		</figure>
 		<hr>
 		<h3>Page Design:</h3>
 		<p><b>Home Page:</b>The homepage will be the main landing page for the website and will feature a slider or
@@ -72,28 +60,21 @@
 
 		<hr>
 		<h3>Dynamic Functionality on the Website:</h3>
-		<p><b>Image Carousel:</b>A simple image carousel on the homepage can showcase different collections or featured clothing items.</p>
-		<p><b>Dropdown Menu: </b>A dropdown menu can be used to display different categories of clothing items, making it easier for customers to navigate the website.</p>
-		<p><b>Hover Effects: </b>Adding hover effects to clothing item images can give customers a better look at the details and features of the item, which can help them make a purchasing decision.</p>
-		<p><b>Basic Product Descriptions: </b>The website can include basic descriptions of each clothing item, including its name, price, and size options.</p>
+		<p><b>Image Carousel:</b>A simple image carousel on the homepage can showcase different collections or featured
+			clothing items.</p>
+		<p><b>Dropdown Menu: </b>A dropdown menu can be used to display different categories of clothing items, making
+			it easier for customers to navigate the website.</p>
+		<p><b>Hover Effects: </b>Adding hover effects to clothing item images can give customers a better look at the
+			details and features of the item, which can help them make a purchasing decision.</p>
+		<p><b>Basic Product Descriptions: </b>The website can include basic descriptions of each clothing item,
+			including its name, price, and size options.</p>
 		<hr>
 	</main>
+
+
 	<footer>
-		<a href="../itis3135/davidsbluefountaindesign.com/index.html" style="color:#9395D3;">Designed by Davids Blue
-			Fountain Design &trade;</a>
-		<br>
-		<a href="https://webpages.charlotte.edu/dbautist/" style="color:#9395D3;">My Webspace |</a>
-		<a href="https://github.com/dbautista15" style="color:#9395D3;"> Github |</a>
-		<a href="https://www.freecodecamp.org/Eltanke" style="color:#9395D3;"> FreeCodeCamp |</a>
-		<a href="https://www.codecademy.com/profiles/eltankedavid" style="color:#9395D3;"> CodeAcademy |</a>
-		<a href="http://linkedin.com/in/davidjrbautista" style="color:#9395D3;"> LinkedIn |</a>
-		<br>
-		<a id="validation_link_html" href="https://validator.w3.org/check?uri=referer" target="_blank"><img
-				src="../itis3135/images/button_validation_html5.png" width="88" height="31"
-				alt="Validate webpage HTML."></a>
-		<a id="validation_link_css" href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img
-				src="../itis3135/images/button_validation_css.png" width="88" height="31"
-				alt="Validate webpage CSS."></a>
+		<div data-include="../components/footer.html"></div>
+		<script src="../clientProject/scripts/dynamicLoader.js"></script>
 	</footer>
 </body>
 

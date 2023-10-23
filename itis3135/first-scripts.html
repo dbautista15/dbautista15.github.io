@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Krona+One&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Silkscreen&display=swap"
+		rel="stylesheet">
+	<script src="../itis3135/scripts/first-scripts.js"></script>
+	<link rel="stylesheet" href="../itis3135/styles/default.css">
+	<title>David Bautista's Dynamic Bull Company Page</title>
+</head>
+
+<body>
+	<header>
+		<div data-include="components/header.html"></div>
+		<script src="../itis3135/scripts/dynamicLoader.js"></script>
+	</header>
+	<main>
+		<h2>Welcome To David Bautista's Dynamic Bulls Company</h2>
+		<button type="button" onclick="scriptTest();">Script Test</button>
+		<h3 id="userFeedback"></h3>
+		<form id="userForm">
+			<label for="name">Username:</label>
+			<input type="text" id="name" required>
+			<br>
+			<label for="mood">How You're Feeling:</label>
+			<input type="text" id="mood" required>
+			<br>
+			<button type="button" onclick="updateH3();">Generate Greeting</button>
+		</form>
+		<label for="favoriteNumber">Favorite Number (0-10):</label>
+		<input type="number" id="favoriteNumber" min="0" max="10" required>
+		<br>
+		<button type="button" onclick="calculatePolygon();">Calculate Polygon</button>
+		<p id="polygonAlert"></p>
+		<h3 id="currentDateTime">Today is...</h3>
+		<br>
+		<h3 class="tagline">"Exploring the Digital Frontier"</h3>
+		<h4 class="tagline">- David Bautista CEO/Founder</h4>
+
+	</main>
+	<footer>
+		<div data-include="components/footer.html"></div>
+		<script src="../itis3135/scripts/dynamicLoader.js"></script>
+	</footer>
+</body>
+
+</html>
